@@ -1,13 +1,14 @@
 const images = [
-    '/img/pexels-ahmed-aqtai-2233416.jpg',
-    '/img/background.jpg',
-    '/img/dollars.jpg',
-    '/img/omer-yildiz-IHFSvlzf9fI-unsplash.jpg',
-    '/img/pexels-haley-black-2087387.jpg',
-    '/img/pexels-irina-iriser-1366957.jpg',
-    '/img/pexels-kedar-bhave-2427797.jpg',
-    '/img/pexels-michael-burrows-7129784.jpg',
-    '/img/pexels-stein-egil-liland-3374210.jpg'
+    '/img/imgs2/pexels-ahmed-aqtai-2233416.webp',
+    '/img/imgs2/background.webp',
+    '/img/imgs2/dollars.webp',
+    '/img/imgs2/omer-yildiz-IHFSvlzf9fI-unsplash.webp',
+    '/img/imgs2/pexels-haley-black-2087387.webp',
+    '/img/imgs2/pexels-irina-iriser-1366957.webp',
+    '/img/imgs2/pexels-kedar-bhave-2427797.webp',
+    '/img/imgs2/pexels-michael-burrows-7129784.webp',
+    '/img/imgs2/pexels-stein-egil-liland-3374210.webp',
+
 ];
 
 let currentImage = 0;
@@ -20,6 +21,7 @@ let rightRow = document.getElementById('rightRow');
 function updateImage() {
     body.style.backgroundImage = `url(${images[currentImage]})`;
     img.src = `${images[currentImage]}`;
+    img.loading = 'lazy';
 }
 
 updateImage();
